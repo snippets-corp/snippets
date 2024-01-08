@@ -1,0 +1,14 @@
+.form-button {
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  margin: 5px;
+  background-color: lightblue;
+}
+.form-button:hover {
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  margin: 5px;
+  background-color: gray;
+}

@@ -1,0 +1,38 @@
+.postContainerDiv {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; */
+  column-count: 4;
+  width: 82%;
+}
+
+.outerDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.TopBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px){
+  .postContainerDiv {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .postContainerDiv {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .postContainerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
