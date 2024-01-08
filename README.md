@@ -6,3 +6,5 @@ Rules:
 2. All pull request need a clear explanation of what was added.
 3. Add testing.
 4. Open to new tech/ideas at any time!
+
+IMPORTANT: Do not expose any private information. All keys and private information MUST be stored in the .env file.
