@@ -1,9 +1,9 @@
 import React from 'react';
-import './Global.css';
+import '../Global.css';
 import {useEffect, useState} from 'react';
 
-import Form from './deeperComponents/Form.jsx';
-import Post from './deeperComponents/Post.jsx';
+import Form from '../Form/Form.jsx';
+import Post from '../Posts/Post.jsx';
 
 import { createClient } from '@supabase/supabase-js';
 const supabase = createClient(
