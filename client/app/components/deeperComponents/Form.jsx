@@ -20,7 +20,6 @@ const Form = () => {
     // function to push images up
     const grabPhotoElement = document.getElementById('imagefile');
     const imageFile = grabPhotoElement.files[0];
-    console.log(imageFile);
     const value = Math.floor(Math.random() * 900000).toString();
     await supabase.storage.from('images').upload(value, imageFile);
     // function to grab image url
@@ -37,6 +36,9 @@ const Form = () => {
       notes,
       select_type
   }]).single();
+  // function to close the form
+    close();
+    location.reload();
   };
 
   return(
@@ -47,19 +49,22 @@ const Form = () => {
               <>
                 <div className="modal">
                   <form onSubmit={handleClick}>
-                    <h3>Create Post Here</h3>
-                    <button onClick={() => { 
-                      close();
-                      location.reload();
-                      }} className="form-button">
+                    <div className="TopBar">
+                    <p>Create Post Here</p>
+                    <button onClick={
+                      () => {
+                        close();
+                        location.reload();
+                      }
+                    } className="xButton">
                       X
                     </button>
-                    <br />
-                    <input placeholder='title of post' id="title_of_post" required/>
+                    </div>
+                    <input placeholder='title of post' id="title_of_post" className="inputOptions" required/>
                     <br />
                     <input type="file" id="imagefile" required />
                     <br />
-                    <input placeholder="notes" id="notes" required />
+                    <input placeholder="notes" id="notes" className="inputOptions" required />
                     <br />
                     <select id="select_type">
                       <option value="React">
