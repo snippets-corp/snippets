@@ -1,6 +1,20 @@
+[data-theme="dark"] {
+  --border-color: darkblue;
+  --post-color: #e1e8f5;
+}
+[data-theme="light"] {
+  --border-color: #6495ed;
+  --post-color: white;
+}
+
+:root {
+  --border-color: #6495ed;
+  --post-color: white;
+}
+
 .post-box {
   position: relative;
-  border: solid 1.5px #6495ed;
+  border: solid 2px var(--border-color);
   border-radius: 7px;
   padding: 20px 30px;
   text-align: center;
@@ -8,7 +22,7 @@
   height: min-content;
   margin-bottom: 15px;
   display: inline-block;
-  background-color: white;
+  background-color: var(--post-color);
 }
 
 .post-box:hover .description {

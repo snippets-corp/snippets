@@ -1,9 +1,26 @@
+[data-theme="dark"] {
+  --button-normal: #e1e8f5;
+  --button-normal-hover: #a6bbdf;
+  --modal: #a3aec0; 
+}
+[data-theme="light"] {
+  --button-normal: #6495ed;
+  --button-normal-hover: #3674e7; 
+  --modal: #f3f6fb;
+}
+
+:root {
+  --button-normal: #6495ed;
+  --button-normal-hover: #3674e7;
+  --modal: #f3f6fb;  
+}
+
 button {
   padding: 15px 10px;
   border: none;
   border-radius: 20px;
   margin: 5px;
-  background-color: #6495ed;
+  background-color: var(--button-normal);
   transition: 0.25s;
 }
 button:hover {
@@ -11,7 +28,7 @@ button:hover {
   border: none;
   border-radius: 20px;
   margin: 5px;
-  background-color: #3674e7;
+  background-color: var(--button-normal-hover);
   color: white;
   transition: 0.25s;
 }
@@ -51,7 +68,7 @@ input[type="file"]::file-selector-button:hover {
 .TopBarForm {
   display: flex;
   justify-content: right;
-  background-color: #f3f6fb;
+  background-color: var(--modal);
 }
 
 select {
@@ -80,20 +97,20 @@ select:hover {
   color: lightgray;
   background-color: white;
   transition: 0s;
-  background-color: #f3f6fb;
+  background-color: var(--modal);
 }
 
 .xButton:hover {
   color: #3674e7;
   background-color: white;
   transition: 0s;
-  background-color: #f3f6fb;
+  background-color: var(--modal);
 }
 
 .modal {
   display: flex;
   flex-direction: column;
-  background-color: #f3f6fb;
+  background-color: var(--modal);
   border: none;
   padding-bottom: 40px;
 }
