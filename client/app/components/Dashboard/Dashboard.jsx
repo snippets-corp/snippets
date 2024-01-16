@@ -4,6 +4,7 @@ import {useEffect, useState} from 'react';
 
 import Form from '../Form/Form.jsx';
 import Post from '../Posts/Post.jsx';
+import Selector from '../Selector/Selector.jsx';
 
 import { createClient } from '@supabase/supabase-js';
 const supabase = createClient(
@@ -33,8 +34,11 @@ const Dashboard = () => {
   return(
     <>
     <div className="TopBar">
-      <p>snippets</p>
-      <Form />
+      <p className="snippetsLogo">snippets</p>
+      <div className='topBarSideDiv'>
+        <Selector />
+        <Form />
+      </div>
     </div>
     <div className="outerDiv">
       <div className='postContainerDiv'>

@@ -11,6 +11,11 @@ body {
   width: 82%;
 }
 
+.topBarSideDiv {
+  display: flex;
+  flex-direction: row;
+}
+
 .outerDiv {
   justify-content: center;
   align-items: center;
@@ -20,6 +25,13 @@ body {
 .TopBar {
   display: flex;
   justify-content: space-between;
+}
+
+.snippetsLogo {
+  margin-left: 15px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #6495ed;
+  font-size: x-large;
 }
 
 @media screen and (max-width: 700px){
