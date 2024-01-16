@@ -1,3 +1,8 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #F0F8FF;
+}
+
 .postContainerDiv {
   /* display: flex;
   flex-wrap: wrap;
@@ -35,4 +40,12 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+.modal {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
 }

@@ -1,6 +1,6 @@
 .post-box {
   position: relative;
-  border: solid 1px gray;
+  border: solid 1.5px #6495ed;
   border-radius: 7px;
   padding: 20px 30px;
   text-align: center;
@@ -8,6 +8,7 @@
   height: min-content;
   margin-bottom: 15px;
   display: inline-block;
+  background-color: white;
 }
 
 .post-box:hover .description {
@@ -72,26 +73,11 @@ img {
   }
 }
 
-
-img,
-.active {
-  color: color(light, base);
-  cursor: pointer;
-  border-color: black;
-  position: relative;
-
-  &:hover {
-    opacity: 0.8; 
-    border-bottom: 4px solid rgba(0, 0, 0, 0.108);
-    cursor: pointer;
-  }
-}
-
 .description {
-  transition: .5s ease;
+  transition: .15s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -99,9 +85,10 @@ img,
 }
 
 .text {
-  background: linear-gradient(to right, #b4d1df, #75afe9);
+  background: #6495ed;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
 }
