@@ -27,7 +27,7 @@ const ColorChanger = ({handleChange}) => {
           className="toggle"
           onChange={toggleMode}
         />
-        <label htmlFor="check">Dark</label>
+        <label htmlFor="check"></label>
       </div>
     </>
   );
