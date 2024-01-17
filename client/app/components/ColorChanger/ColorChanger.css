@@ -2,11 +2,11 @@
   --toggle-color: white;
 }
 [data-theme="light"] {
-  --toggle-color: #6495ed;
+  --toggle-color: #a2bef3;
 }
 
 :root {
-  --toggle-color: #6495ed;
+  --toggle-color: #a2bef3;
 }
 
 .toggle {
