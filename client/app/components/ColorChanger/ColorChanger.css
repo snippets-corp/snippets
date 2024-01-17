@@ -1,0 +1,41 @@
+[data-theme="dark"] {
+  --toggle-color: white;
+}
+[data-theme="light"] {
+  --toggle-color: #a2bef3;
+}
+
+:root {
+  --toggle-color: #a2bef3;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.toggle + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle + label::before {
+  content: "";
+  height: 1em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: var(--toggle-color);
+}
+
+.toggle + label::after {
+  content: "";
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 1em;
+  background-color: darkblue;
+  position: absolute;
+}
+
+.toggle:checked + label::after {
+  transform: translateX(120%);
+}

@@ -44,13 +44,11 @@ const Form = () => {
   return(
     <>
       <div className="center-popup">
-        <Popup trigger={<button>Open Me</button>} position="center middle" modal nested>{
+        <Popup trigger={<button>Add Post</button>} position="center middle" modal nested>{
             close => (
               <>
                 <div className="modal">
-                  <form onSubmit={handleClick}>
-                    <div className="TopBar">
-                    <p>Create Post Here</p>
+                <div className="TopBarForm">
                     <button onClick={
                       () => {
                         close();
@@ -59,12 +57,21 @@ const Form = () => {
                     } className="xButton">
                       X
                     </button>
-                    </div>
-                    <input placeholder='title of post' id="title_of_post" className="inputOptions" required/>
+                  </div>
+                  <form onSubmit={handleClick}>
+                    <label>
+                      Title of Post
+                    </label>
+                    <br />
+                    <input id="title_of_post"className="inputOptions" required/>
+                    <br />
+                    <label>
+                      Description
+                    </label>
+                    <br />
+                    <input id="notes" className="inputOptions" required />
                     <br />
                     <input type="file" id="imagefile" required />
-                    <br />
-                    <input placeholder="notes" id="notes" className="inputOptions" required />
                     <br />
                     <select id="select_type">
                       <option value="React">
@@ -106,7 +113,7 @@ const Form = () => {
                     </select>
                     <br />
                     <button>
-                      Add Post
+                      Publish
                     </button>
                   </form>
                 </div>
