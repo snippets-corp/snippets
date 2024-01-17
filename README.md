@@ -4,7 +4,7 @@ A social media platform that allows users to share photos about code they've bee
 
 <img src="./assets/snippetsMainPage.png" />
 
-This application utilizes React, Node, and SQL databases. The dashboard consist of a feed that updates automatically every time a post is added. Plus, there is light and dark mode!
+This application utilizes React, Node, and SQL databases. The dashboard consist of a feed that updates automatically every time a post is added. Every post includes a title as well as a description which appears when you hover your mouse over the post. Plus, there is light and dark mode!
 
 <img src="./assets/SnippetsDarkMode.png" />
 
