@@ -28,6 +28,8 @@ body {
 .topBarSideDiv {
   display: flex;
   flex-direction: row;
+  padding-top: 15px;
+  padding-right: 5px;
 }
 
 .outerDiv {
