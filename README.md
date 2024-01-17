@@ -1,6 +1,6 @@
 # snippets
 
-A social media platform that allows users to share photos about code they've been working on or posts that helped them better understand a subject.
+A social media platform that allows users to share photos about code they've been working on or snippets of code or advice that helped them better understand a subject.
 
 <img src="./assets/snippetsMainPage.png" />
 
