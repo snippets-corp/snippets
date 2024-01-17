@@ -1,3 +1,14 @@
+[data-theme="dark"] {
+  --toggle-color: white;
+}
+[data-theme="light"] {
+  --toggle-color: #6495ed;
+}
+
+:root {
+  --toggle-color: #6495ed;
+}
+
 .toggle {
   visibility: hidden;
 }
@@ -13,8 +24,7 @@
   height: 1em;
   width: 2em;
   border-radius: 1em;
-  background-color: rgb(124, 16, 16);
-  margin-right: 0.5em;
+  background-color: var(--toggle-color);
 }
 
 .toggle + label::after {
@@ -22,10 +32,10 @@
   height: 0.8em;
   width: 0.8em;
   border-radius: 1em;
-  background-color: rgb(153, 35, 35);
+  background-color: darkblue;
   position: absolute;
 }
 
-.toggle + label::after {
-  transform: translateX(100%);
+.toggle:checked + label::after {
+  transform: translateX(120%);
 }
